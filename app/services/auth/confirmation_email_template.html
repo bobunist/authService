@@ -1,0 +1,8 @@
+<div>
+    <h1>Здравствуйте, {email_address}, вот ваш код подтверждения регистрации</h1>
+    <h2 style="color: red;">{confirm_code}</h2>
+    <h1>Или нажмите на кнопку:</h1>
+    <form method="post" action="http://127.0.0.1:8001/confirm-registration/{email_address}/{confirm_code}">
+        <button type="submit">Подтвердить регистрацию</button>
+    </form>
+</div>
